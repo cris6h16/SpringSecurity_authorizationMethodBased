@@ -12,6 +12,6 @@
 - `@PostAuthorize`
 - `@PreFilter`
 - `@PostFilter`
-- `@Secured`  
+- `@Secured` -> Legacy, `@PreAuthorize` supercedes it and is recommended instead. use it enabling in `@EnableMethodSecurity`
 
 ALL work on any Spring bean
