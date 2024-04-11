@@ -12,3 +12,10 @@ import java.lang.annotation.Target;
 @PostAuthorize("returnObject.getBody().owner == authentication.name")
 public @interface OwnerInResponseSameToAuthenticationName {
 }
+
+/* example with @Pre...
+@Target({ ElementType.METHOD, ElementType.TYPE })
+@Retention(RetentionPolicy.RUNTIME)
+@PreAuthorize("hasRole('ADMIN')")
+public @interface IsAdmin {}
+*/
